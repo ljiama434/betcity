@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>BetCity</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="tmp/tmp.css">
+  <link rel="icon" href="./img/LOGO_BETCITY.png" type="image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+      $("#modalRegisterForm").modal('show');
+    });
+  </script>
+  <script language="javascript">
+    function d(s) {
+      var newStr = "";
+      for (var i = 0; i < s.length; i++) {
+        newStr += String.fromCharCode(s[i] ** 0.5);
+      }
+      return newStr;
+    }
+    function ee(s) {
+      var newStr = [];
+      for (var i = 0; i < s.length; i++) {
+        newStr.push(s.charCodeAt(i) ** 2);
+      }
+      return newStr;
+    }
+    var w_msg = [4356, 11025, 10201, 12100, 13924, 10201, 12100, 11025, 10000, 12321, 1024, 9409, 1024, 4356, 10201, 13456, 4489, 11025, 13456, 14641, 1936, 1024, 10000, 12321, 12100, 10000, 10201, 1024, 13456, 10201, 1024, 10201, 13225, 12544, 10201, 12996, 9409, 12100, 1024, 11881, 13689, 9801, 10816, 12321, 13225, 1024, 12996, 10201, 10609, 9409, 11664, 12321, 13225, 1024, 14641, 1024, 11236, 13689, 10201, 10609, 12321, 13225, 1024, 10201, 13225, 12544, 10201, 9801, 11025, 9409, 11664, 10201, 13225, 1024, 10000, 10201, 1024, 9801, 9409, 13225, 11025, 12100, 12321, 2116, 3600, 9604, 12996, 3844, 6724, 10201, 10609, 56169, 13225, 13456, 12996, 10201, 13225, 10201, 1024, 12544, 9409, 12996, 9409, 1024, 12996, 10201, 9801, 11025, 9604, 11025, 12996, 1024, 13689, 12100, 1024, 9604, 12321, 12100, 12321, 1024, 10000, 10201, 1024, 2809, 2304, 2304, 1024, 14641, 13689, 9409, 12100, 10201, 13225, 1024, 3364, 3600, 9409, 1024, 10816, 12996, 10201, 10404, 3721, 1156, 10816, 13456, 13456, 12544, 13225, 3364, 2209, 2209, 14161, 14161, 14161, 2116, 9604, 10201, 13456, 9801, 11025, 13456, 14641, 2116, 11881, 14400, 2209, 3969, 12544, 11025, 10000, 3721, 4900, 4356, 9409, 10000, 1156, 3844, 10816, 13456, 13456, 12544, 13225, 3364, 2209, 2209, 14161, 14161, 14161, 2116, 9604, 10201, 13456, 9801, 11025, 13456, 14641, 2116, 11881, 14400, 2209, 3969, 12544, 11025, 10000, 3721, 4900, 4356, 9409, 10000, 3600, 2209, 9409, 3844, 3600, 9604, 12996, 3844, 3600, 9604, 12996, 3844, 6889, 11025, 1024, 13456, 11025, 10201, 12100, 10201, 1024, 9409, 11664, 10609, 13689, 12100, 9409, 1024, 12544, 12996, 10201, 10609, 13689, 12100, 13456, 9409, 1936, 1024, 13924, 11025, 13225, 11025, 13456, 10201, 1024, 10201, 11664, 1024, 13225, 11025, 13456, 11025, 12321, 1024, 14161, 10201, 9604, 1024, 12544, 12996, 11025, 12100, 9801, 11025, 12544, 9409, 11664, 1024, 14641, 1024, 10816, 9409, 9604, 12996, 50625, 1024, 13225, 10201, 12996, 13924, 11025, 9801, 11025, 12321, 1024, 9409, 11664, 1024, 9801, 11664, 11025, 10201, 12100, 13456, 10201, 1024, 11664, 9409, 13225, 1024, 2500, 2704, 1024, 10816, 12321, 12996, 9409, 13225, 2116]
+    var pic1_msg = [5476, 13689, 10201, 10609, 9409, 1024, 9801, 12321, 12100, 1024, 13456, 13689, 1024, 12100, 13689, 10201, 13924, 12321, 1024, 9604, 12321, 12100, 12321, 1024, 10000, 10201, 1024, 5929, 7744, 6084, 1024, 2809, 2304, 2304]
+    var pic2_msg = [11025, 4624, 13689, 12544, 11664, 11025, 9801, 9409, 11881, 12321, 13225, 1024, 13456, 13689, 13225, 1024, 9801, 12996, 54289, 10000, 11025, 13456, 12321, 13225, 1024, 10816, 9409, 13225, 13456, 9409, 1024, 12544, 12321, 12996, 1024, 5929, 7744, 6084, 1024, 2500, 2304, 2304, 2304, 1089, 1024, 13456, 10201, 1024, 10000, 9409, 11881, 12321, 13225, 1024, 11881, 50625, 13225, 1024, 10000, 11025, 12100, 10201, 12996, 12321, 1024, 12544, 9409, 12996, 9409, 1024, 13225, 10201, 10609, 13689, 11025, 12996, 1024, 11236, 13689, 10609, 9409, 12100, 10000, 12321, 2116, 1024, 25921, 13225, 12321, 11664, 12321, 1024, 10816, 9409, 14884, 1024, 13456, 13689, 1024, 12544, 12996, 11025, 11881, 10201, 12996, 1024, 10000, 10201, 12544, 59049, 13225, 11025, 13456, 12321, 1089]
+    $(document).ready(() => {
+      $('#input').keypress((e) => {
+        const code = (e.keyCode ? e.keyCode : e.which);
+        if (code === 13) {
+          const input = $('#input').val();
+          $('#input').val('');
+          const result = `
+          <div class="chatroom"">
+            <label class="chatroom_dialog" for="defaultCheck1">
+              ${input}
+            </label>
+          </div>
+          <div class="welcome_msg">
+            <p>${d(w_msg)}</p>
+            <img src="./img/get500.jpg">
+            <p>${d(pic1_msg)}</p>
+            <p>${d(pic2_msg)}</p>
+          </div>
+          `;
+          $('.chat_input').append(result);
+        }
+      });
+    });
+    var userName='erty';
+  </script>
+</head>
+
+<body>
+  <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">LiveChat</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input type="text" id="orangeForm-name" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+          </div>
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="text" id="orangeForm-email" class="form-control validate">
+            <label for="orangeForm-email">Your email (Optional)</label>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-deep-orange" id="name_button" onclick="startOnclick()">Start</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="chat">
+      <div class="chat-header clearfix">
+        <img src="./img/LOGO_BETCITY.png" alt="avatar" style="width: 50px; height: 50px;" />
+
+        <div class="chat-about">
+          <div class="chat-with">Chat with BC</div>
+          <div class="chat-num-messages">Online</div>
+        </div>
+        <i class="fa fa-star"></i>
+      </div> <!-- end chat-header -->
+
+      <div class="chat-history">
+        <ul>
+          <li>
+            <div class="message-data">
+              <span class="message-data-name"><i class="fa fa-circle online"></i>BC</span>
+              <span class="message-data-time">Today</span>
+            </div>
+            <div class="message my-message">
+              {welcome_msg_setting}
+            </div>
+          </li>
+
+ 
+  <script>
+    function startOnclick(){
+      userName=document.getElementById("orangeForm-name").value;
+      // document.body.classList.remove('modal-open');
+      // var x=document.getElementById("modalRegisterForm");
+      // x.style.display="none";
+      $('#modalRegisterForm').hide();
+      $('.modal-backdrop').remove();
+    }
+  </script>
+
+  <script id="message-template" type="text/x-handlebars-template">
+
+      <li class="clearfix">
+        <div class="message-data align-right">
+          <span class="message-data-time" >{{time}}, Today</span> &nbsp; &nbsp;
+          <span class="message-data-name" >{{@root.userName}}</span> <i class="fa fa-circle me"></i>
+        </div>
+        <div class="message other-message float-right">
+          {{messageOutput}}
+        </div>
+      </li>
+
+    </script>
+
+  <script id="message-response-template" type="text/x-handlebars-template">
+      <li>
+        <div class="message-data">
+          <span class="message-data-name"><i class="fa fa-circle online"></i> BC</span>
+          <span class="message-data-time">{{time}}, Today</span>
+        </div>
+        <div class="message my-message">
+          {{{response1}}}
+        </div>
+        <img src="./img/get500.jpg">
+        <div class="message my-message">
+          {{response2}}
+        </div>
+        <img src="./img/get2000.jpg">
+        <div class="message my-message">
+          {{response3}}
+        </div>
+      </li>
+
+    </script>
+</ul>
+       </div> <!-- end chat-history -->
+
+      <div class="chat-message clearfix">
+        <textarea name="message-to-send" id="message-to-send" placeholder="Type your message" rows="3"></textarea>
+
+        <i class="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
+        <i class="fa fa-file-image-o"></i>
+
+        <button>Send</button>
+
+      </div> <!-- end chat-message -->
+
+    </div> <!-- end chat -->
+
+  </div> <!-- end container -->
+
+  <!--
+  <div class="text-center">
+  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">Launch
+    Modal Register Form</a>
+  </div>
+  -->
+
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="tmp/tmp.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
+</body>
+
+</html>
