@@ -2,8 +2,11 @@
  *, *:before, *:after {
 	 box-sizing: border-box;
 }
-a { 
-	word-wrap: break-word; 
+a {word-wrap: break-word; }
+li {list-style-type:none;}
+ul{
+    margin-left: 0px;
+	padding-left: 0px;
 }
  body {
 	 background: #c5ddeb;
@@ -52,7 +55,7 @@ a {
 	 margin-top: 12px;
 }
  .chat .chat-history {
-	 padding: 30px 30px 20px;
+	 padding: 30px 10px 20px;
 	 border-bottom: 2px solid white;
 	 overflow-y: scroll;
 	 height: 70vh;
@@ -163,7 +166,7 @@ a {
 		margin: 0 auto;
    }
 	.chat .chat-history {
-		padding: 30px 30px 20px;
+		padding: 30px 10px 20px;
 		border-bottom: 2px solid white;
 		overflow-y: scroll;
 		height: 700px;
@@ -171,7 +174,7 @@ a {
 }
 @media screen and (max-width:480px){
 	.chat .chat-history {
-		padding: 30px 30px 20px;
+		padding: 30px 10px 20px;
 		border-bottom: 2px solid white;
 		overflow-y: scroll;
 		height: 60vh;
