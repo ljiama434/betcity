@@ -4,14 +4,7 @@
   var pic2_msg = [11025, 4624, 13689, 12544, 11664, 11025, 9801, 9409, 11881, 12321, 13225, 1024, 13456, 13689, 13225, 1024, 9801, 12996, 54289, 10000, 11025, 13456, 12321, 13225, 1024, 10816, 9409, 13225, 13456, 9409, 1024, 12544, 12321, 12996, 1024, 5929, 7744, 6084, 1024, 2500, 2304, 2304, 2304, 1089, 1024, 13456, 10201, 1024, 10000, 9409, 11881, 12321, 13225, 1024, 11881, 50625, 13225, 1024, 10000, 11025, 12100, 10201, 12996, 12321, 1024, 12544, 9409, 12996, 9409, 1024, 13225, 10201, 10609, 13689, 11025, 12996, 1024, 11236, 13689, 10609, 9409, 12100, 10000, 12321, 2116, 1024, 25921, 13225, 12321, 11664, 12321, 1024, 10816, 9409, 14884, 1024, 13456, 13689, 1024, 12544, 12996, 11025, 11881, 10201, 12996, 1024, 10000, 10201, 12544, 59049, 13225, 11025, 13456, 12321, 1089]
   var chat = {
     messageToSend: '',
-    messageResponses: [
-      'Why did the web developer leave the restaurant? Because of the table layout.',
-      'How do you comfort a JavaScript bug? You console it.',
-      'An SQL query enters a bar, approaches two tables and asks: "May I join you?"',
-      'What is the most used language in programming? Profanity.',
-      'What is the object-oriented way to become wealthy? Inheritance.',
-      'An SEO expert walks into a bar, bars, pub, tavern, public house, Irish pub, drinks, beer, alcohol'
-    ],
+    // messageResponses: [''.''],
     result1: `${d(w_msg)}`,
     result2: `${d(pic1_msg)}`,
     result3: `${d(pic2_msg)}`,
