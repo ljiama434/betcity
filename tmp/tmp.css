@@ -21,13 +21,13 @@ ul{
 	 /* border-radius: 5px; */
 }
  .chat {
-     width: 80vw;
+     width: 90%;
 	 background: #f2f5f8;
 	 border-top-right-radius: 5px;
 	 border-bottom-right-radius: 5px;
      color: #434651;
      display: block;
-     margin: auto;
+	 margin: 0 auto;
 }
  .chat .chat-header {
 	 padding: 20px;
