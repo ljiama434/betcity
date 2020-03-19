@@ -64,7 +64,10 @@
     </div>
   </div>
   </form>
-  <script>
+  <script language="javascript">
+    function redirect() {
+    	window.location.href="https://bcchatroom.netlify.com";  
+    }
     function startOnclick() {
       
       if(document.getElementById("orangeForm-name").value==''){
@@ -74,9 +77,10 @@
         // var x=document.getElementById("modalRegisterForm");
         // x.style.display="none";
         console.warn("CAPTURE ENTER");
+        window.event.returnValue=false
         userName = document.getElementById("orangeForm-name").value;
         document.getElementById("orangeForm-email").value='';
-        document.location.href="https://bcchatroom.netlify.com";
+        redirect();
       }
       
     }
