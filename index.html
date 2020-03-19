@@ -58,12 +58,31 @@
           </div>
         </div>
         <div class="modal-footer d-flex justify-content-center">
-          <button type="submit" class="btn btn-deep-orange" id="name_button" onclick="location.href='https://bcchatroom.netlify.com';">Contacta con nosotras y consigue regalos.</button>
+          <button type="submit" class="btn btn-deep-orange" id="name_button" onclick="startOnclick()">Contacta con nosotras y consigue regalos.</button>
         </div>
       </div>
     </div>
   </div>
   </form>
+  <script>
+    function startOnclick() {
+      
+      if(document.getElementById("orangeForm-name").value==''){
+        console.warn("CAPTURE NOT ENTER");
+      }else{
+        // document.body.classList.remove('modal-open');
+        // var x=document.getElementById("modalRegisterForm");
+        // x.style.display="none";
+        console.warn("CAPTURE ENTER");
+        userName = document.getElementById("orangeForm-name").value;
+        document.getElementById("orangeForm-email").value='';
+        $('#modalRegisterForm').hide();
+        window.location = "https://bcchatroom.netlify.com"
+      }
+      
+    }
+  </script>
+
 
 
 
