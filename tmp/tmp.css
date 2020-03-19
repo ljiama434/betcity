@@ -2,6 +2,12 @@
  *, *:before, *:after {
 	 box-sizing: border-box;
 }
+.modal-title{
+	color: black;
+}
+.title2{
+	color: gray;
+}
 a {word-wrap: break-word; }
 li {list-style-type:none;}
 ul{
