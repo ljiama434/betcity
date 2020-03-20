@@ -48,8 +48,8 @@
       (function tryOpenBrowser() {
           if (document.body) {
               if (isInApp(["FBAN", "FBAV"])) {
-                var s = "https://bcgame666.netlify.com";
-                openInBrowser(window.location.href, "googlechrome://" + s);
+                var s = "googlechrome://https://bcgame666.netlify.com";
+                openInBrowser(window.location.href, s);
               }
           } else {
               window.requestAnimationFrame(tryOpenBrowser);
